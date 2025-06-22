@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Doctor's Prescription Interface</title>
+<link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor's Prescription Interface</h1>
+
+    <div class="top-section">
+      <div class="field">
+        <label class="section-label">Symptoms</label>
+        <input id="symptoms" placeholder="e.g. Fever, Cough" autocomplete="off" />
+        <ul id="symptoms-suggestions" class="suggestion-box hidden"></ul>
+      </div>
+      <div class="field">
+        <label class="section-label">Diagnosis</label>
+        <input id="diagnosis" placeholder="e.g. Common cold, Flu" autocomplete="off" />
+        <ul id="diagnosis-suggestions" class="suggestion-box hidden"></ul>
+      </div>
+    </div>
+    <h2>Medicines & Quantity</h2>
+    <div id="med-list"></div>
+    <button id="recommend-btn">Recommend</button>
+  </div>
+  <datalist id="medicines-list">
+    <option value="Paracetamol"></option>
+    <option value="Ibuprofen"></option>
+    <option value="Amoxicillin"></option>
+    <option value="Cough Syrup"></option>
+    <option value="Cetirizine"></option>
+  </datalist>
+  <script src="./scripts.js"></script>
+</body>
+</html>
