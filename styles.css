@@ -2,17 +2,77 @@ body {
   background: #edf2f7;
   font-family: Arial, sans-serif;
   padding: 2rem;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
+.app-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.patient-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  width: 300px;
+  height: fit-content;
+}
+
+.patient-header h2 {
+  color: #1a202c;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+}
+
+.patient-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.patient-photo i {
+  font-size: 100px;
+  color: #4299e1;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-label {
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.info-value {
+  color: #1a202c;
+  font-size: 0.9rem;
+}
+
+/* Prescription Container */
 .container {
   background: white;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0,0,0,0.08);
-  width: 100%;
-  max-width: 800px;
+  width: 800px;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +88,7 @@ h1 {
   display: flex;
   gap: 2rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e2e8f0; /* Light line after symptoms and diagnosis */
+  border-bottom: 1px solid #e2e8f0;
   padding-bottom: 1rem;
 }
 
