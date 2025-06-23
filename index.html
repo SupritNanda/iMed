@@ -4,26 +4,60 @@
 <meta charset="UTF-8" />
 <title>Doctor's Prescription Interface</title>
 <link href="styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Doctor's Prescription Interface</h1>
-
-    <div class="top-section">
-      <div class="field">
-        <label class="section-label">Symptoms</label>
-        <input id="symptoms" placeholder="e.g. Fever, Cough" autocomplete="off" />
-        <ul id="symptoms-suggestions" class="suggestion-box hidden"></ul>
+  <div class="app-container">
+    <div class="patient-container">
+      <div class="patient-header">
+        <h2>Patient Details</h2>
       </div>
-      <div class="field">
-        <label class="section-label">Diagnosis</label>
-        <input id="diagnosis" placeholder="e.g. Common cold, Flu" autocomplete="off" />
-        <ul id="diagnosis-suggestions" class="suggestion-box hidden"></ul>
+      <div class="patient-photo">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="patient-info">
+        <div class="info-group">
+          <span class="info-label">Name:</span>
+          <span class="info-value">John Doe</span>
+        </div>
+        <div class="info-group">
+          <span class="info-label">Patient ID:</span>
+          <span class="info-value">PID-001234</span>
+        </div>
+        <div class="info-group">
+          <span class="info-label">Gender:</span>
+          <span class="info-value">Male</span>
+        </div>
+        <div class="info-group">
+          <span class="info-label">Age:</span>
+          <span class="info-value">32 years</span>
+        </div>
+        <div class="info-group">
+          <span class="info-label">Weight:</span>
+          <span class="info-value">72 kg</span>
+        </div>
       </div>
     </div>
-    <h2>Medicines & Quantity</h2>
-    <div id="med-list"></div>
-    <button id="recommend-btn">Recommend</button>
+
+    <div class="container">
+      <h1>Doctor's Prescription Interface</h1>
+
+      <div class="top-section">
+        <div class="field">
+          <label class="section-label">Symptoms</label>
+          <input id="symptoms" placeholder="e.g. Fever, Cough" autocomplete="off" />
+          <ul id="symptoms-suggestions" class="suggestion-box hidden"></ul>
+        </div>
+        <div class="field">
+          <label class="section-label">Diagnosis</label>
+          <input id="diagnosis" placeholder="e.g. Common cold, Flu" autocomplete="off" />
+          <ul id="diagnosis-suggestions" class="suggestion-box hidden"></ul>
+        </div>
+      </div>
+      <h2>Medicines & Quantity</h2>
+      <div id="med-list"></div>
+      <button id="recommend-btn">Recommend</button>
+    </div>
   </div>
   <datalist id="medicines-list">
     <option value="Paracetamol"></option>
